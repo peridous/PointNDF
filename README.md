@@ -65,6 +65,6 @@ python evaluate.py --dataset punet --data-root /path/to/data --predictions /path
 
 Add `--p2m` to compute point-to-mesh distance.
 
-The original checkpoint loads correctly and the model has 39,119,148 parameters. The new training entrypoint has not been tested on the GPU yet.
+The original checkpoint loads correctly and the model has 39,119,148 parameters. 
 
 Third-party notices are listed in `THIRD_PARTY.md` and `licenses/`.
