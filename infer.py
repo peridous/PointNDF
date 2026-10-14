@@ -20,11 +20,24 @@ def save_xyz(path, points):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     np.savetxt(path, points, fmt='%.8f')
 
+def load_checkpoint_state(path):
+    import numpy as np
+    import torch
+
+    rng_types = [
+        np.core.multiarray._reconstruct,
+        np.ndarray,
+        np.dtype,
+        type(np.dtype(np.uint32)),
+    ]
+    with torch.serialization.safe_globals(rng_types):
+        checkpoint = torch.load(path, map_location='cpu', weights_only=True)
+    state = checkpoint['model'] if 'model' in checkpoint else checkpoint
+    return strip_module_prefix(state)
+
 def load_model(device):
     print('Loading checkpoint:', CHECKPOINT)
-    checkpoint = torch.load(CHECKPOINT, map_location='cpu', weights_only=True)
-    state = checkpoint['model'] if 'model' in checkpoint else checkpoint
-    state = strip_module_prefix(state)
+    state = load_checkpoint_state(CHECKPOINT)
     model = Model()
     result = model.load_state_dict(state, strict=True)
     if result.missing_keys or result.unexpected_keys:
