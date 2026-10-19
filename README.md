@@ -5,7 +5,7 @@
 ¹ Dutch Fork High School, Irmo, SC, USA  
 ² University of South Carolina, Columbia, SC, USA
 
-**Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
+📢 **Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
 
 **[Paper (PDF)](./PointNDF.pdf)** | **[Code](https://github.com/peridous/PointNDF)**
 
@@ -88,6 +88,6 @@ python evaluate.py --dataset punet --data-root /path/to/data --predictions /path
 
 Add `--p2m` to compute point-to-mesh distance.
 
-The original checkpoint loads correctly and the model has 39,119,148 parameters. 
+The complete model contains approximately 39.1 million parameters.
 
 Third-party notices are listed in `THIRD_PARTY.md` and `licenses/`.
