@@ -1,6 +1,29 @@
-# PointNDF
+# PointNDF: Cascaded Neural Displacement Fields for Point Cloud Denoising
 
-This is the code for our paper, *PointNDF: Cascaded Neural Displacement Fields for Point Cloud Denoising*.
+**Michael Wang¹ and Pingping Cai²**
+
+¹ Dutch Fork High School, Irmo, SC, USA  
+² University of South Carolina, Columbia, SC, USA
+
+**Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
+
+**[Paper (PDF)](./PointNDF.pdf)** | **[Code](https://github.com/peridous/PointNDF)**
+
+## Overview
+
+PointNDF is a deep learning framework for point cloud denoising that combines **Point Transformer V3 (PTv3)** with **cascaded Neural Displacement Fields (NDFs)** to progressively recover clean geometry from noisy 3D point clouds.
+
+![PointNDF Qualitative Comparison](./Visual.jpg)
+
+*Qualitative comparison on 10K-point clouds with 3% Gaussian noise.*
+
+The framework consists of three main components:
+
+- **PTv3-based feature extraction:** Aggregates geometric information into a shared patch-level descriptor.
+- **Neural Displacement Fields:** Fuse global geometric context with local point-wise features to predict displacements using bounded-vector and scale-factor branches.
+- **Cascaded refinement:** Three NDF stages progressively refine point coordinates while propagating local features across stages.
+
+PointNDF is evaluated on **PU-Net** and **ModelNet10** across 10K- and 50K-point resolutions and Gaussian noise levels of 1%, 2%, and 3%.
 
 ## Setup
 
