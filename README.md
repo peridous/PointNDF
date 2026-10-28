@@ -7,8 +7,6 @@
 
 📢 **Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
 
-**[Paper (PDF)](./PointNDF.pdf)** | **[Code](https://github.com/peridous/PointNDF)**
-
 ## Overview
 
 PointNDF is a deep learning framework for point cloud denoising that combines **Point Transformer V3 (PTv3)** with **cascaded Neural Displacement Fields (NDFs)** to progressively recover clean geometry from noisy 3D point clouds.
