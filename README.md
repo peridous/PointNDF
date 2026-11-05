@@ -4,7 +4,7 @@
 
 📢 **Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
 
-**Paper:** [arXiv Preprint](https://arxiv.org/abs/2611.05411) | **Code:** [Code](https://github.com/peridous/PointNDF)
+**Paper:** [arXiv Preprint](https://arxiv.org/abs/2611.05411) | **Code:** [GitHub](https://github.com/peridous/PointNDF)
 
 ## Overview
 
