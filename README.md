@@ -1,11 +1,10 @@
 # PointNDF: Cascaded Neural Displacement Fields for Point Cloud Denoising
 
-**Michael Wang¹ and Pingping Cai²**
-
-¹ Dutch Fork High School, Irmo, SC, USA  
-² University of South Carolina, Columbia, SC, USA
+**Michael Y. Wang and Pingping Cai**
 
 📢 **Accepted to MMM 2027 (International Conference on Multimedia Modeling)**
+
+**Paper:** [arXiv Preprint](https://arxiv.org/abs/2611.05411) | **Code:** [Code](https://github.com/peridous/PointNDF)
 
 ## Overview
 
@@ -89,3 +88,22 @@ Add `--p2m` to compute point-to-mesh distance.
 The complete model contains approximately 39.1 million parameters.
 
 Third-party notices are listed in `THIRD_PARTY.md` and `licenses/`.
+
+
+
+## Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@misc{wang2026pointndf,
+  title={PointNDF: Cascaded Neural Displacement Fields for Point Cloud Denoising},
+  author={Wang, Michael Y. and Cai, Pingping},
+  year={2026},
+  eprint={2611.05411},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2611.05411}
+}
+```
+
